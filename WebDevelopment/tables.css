@@ -1,0 +1,179 @@
+﻿/************************** Tables **************************/
+.table_div {
+	background-color: rgba(0, 0, 0, 0);
+	border: 0px;
+}
+
+table {	
+	background-color: white;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;	
+	border-radius: 10px;
+	
+	font-family: Tahoma;
+	font-size: 15px;
+}
+
+caption {
+	background-color: rgba(0, 0, 0, 0);
+	height: 50px;
+	line-height: 50px;	
+	
+	position: relative;
+	font-size: 22px;
+}
+
+thead {	
+	background-color: rgba(160, 13, 13, 1);
+	width: 100%;	
+	font-size: 16px;
+	border-bottom: 2px solid black;
+}
+
+thead tr{	
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+}
+
+.rounded thead tr th:first-child{
+	border-top-left-radius: 10px;
+}
+
+thead tr th:last-child{
+	border-top-right-radius: 10px;
+}
+
+tfoot tr {
+	min-height: 20px;
+}
+
+tfoot tr td{
+	background-color: rgb(240, 240, 240);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+tbody tr {
+	background-color: rgba(240, 240, 240, 1);
+}
+
+thead tr,
+tbody tr {
+	border-bottom: 1px solid rgba(160, 13, 13, 1);
+}
+
+th,
+td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+tbody tr:hover {
+	background-color: rgba(160, 13, 13, 0.4);
+	cursor: pointer;
+	cursor: hand;
+}
+
+/************************** Table Pagination **************************/
+#page_nav {
+	float: right;
+	margin-right: 20px;
+}
+
+#pagenav_list {
+	float: right;
+	list-style-type: none;
+}
+
+#pagenav_list li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#pagenav_list li.clickable {
+	color: blue;	
+	cursor: pointer;
+	cursor: hand;
+}
+
+#pagenav_list li.clickable:hover {
+	color: red;	
+}
+
+#pagenav_list li.selected {
+	text-decoration: underline;
+}
+
+/************************** Table Tabs **************************/
+#tabs_div {
+	background-color: rgba(0, 0, 0, 0);
+	width: 200px;
+	height: 40px;
+	z-index: 50;
+	
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	
+	font-size: 18;
+}
+
+.tab {
+	background-color: rgba(160, 13, 13, 1);
+	width: 100px;
+	height: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	
+	text-transform: capitalize;
+}
+
+.tab.selected {
+	border-bottom: rgba(150, 145, 145, 1);
+}
+
+.tab:hover{
+	color: rgba(237, 156, 17, 0.6);
+	cursor: pointer;
+	cursor: hand;
+}
+
+/************************** Specific tables **************************/
+#categories_div {
+	width: 300px;
+}
+
+.edit_message{
+	color: blue;
+	font-weight: normal;
+}
+
+.edit_message:hover{
+	text-decoration: underline;
+	margin-bottom: 10px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#reports_div {
+	box-shadow: 0px 0px;
+}
+
+#reports_table {
+	box-shadow: 6px 6px 10px black;
+}

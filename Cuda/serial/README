@@ -1,0 +1,19 @@
+This directory contains an Octave implementation for solving the circles-fitting problem.
+
+To execute the program from command line, use the following:
+
+  octave -q -f findrings ../data/batchXX.dat
+
+The entry point function is 'fitCircles'. It accepts 2 arguments:
+
+1. file     :  the input file containing the points for which we
+               need to find best-fit circles
+2. plotData :  boolean flag to indicate whether to plot the final
+               circles for visualization
+
+Hence, the usage of this function within octave is:
+  fitCircles('../batch00.dat', true)
+
+This prints the final circles to stdout. If you have enabled
+plotting, it will also show them in a plot window (if enabled).
+

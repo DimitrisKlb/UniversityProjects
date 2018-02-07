@@ -1,0 +1,54 @@
+﻿#google_map {
+	height: 500px;
+}
+
+#statistics_div {
+	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(240, 240, 240, 1);
+	width: 512px;
+	max-width: 512px;
+	height: 500px;
+}
+
+/************************** Reports' Table **************************/
+
+.glow {
+	background-color: rgba(160, 13, 13, 0.7);
+}
+
+tbody tr.glow:hover{
+	background-color: rgba(160, 13, 13, 0.8);
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+	width: 170px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+	width: 100px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+	width: 300px;
+}
+
+@media only screen and (max-width:1024px) {
+	#statistics_div {
+		width: 99%;
+	}
+	th:nth-child(2),
+	td:nth-child(2) {
+		display: none;
+	}
+
+	th:nth-child(3),
+	td:nth-child(3) {
+		display: none;
+	}
+}
+
+
+

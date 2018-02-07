@@ -1,0 +1,3 @@
+COMPONENT=PingPongAppC
+include $(MAKERULES)
+

@@ -1,0 +1,12 @@
+#!/usr/bin/octave -qf
+% the main octave program for fitting circles
+% USAGE:
+%   octave -q -f findrings batchXX.dat
+
+args = argv();
+dataFile = args{1};
+
+% in case one wants to see the plot of circles along with the points
+% just set the below flag to 'true'.
+fitCircles(dataFile, false);
+

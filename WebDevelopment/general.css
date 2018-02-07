@@ -1,0 +1,288 @@
+﻿html,body {
+	padding: 0;
+	margin: 0;
+}
+/* make body's background transparent to explicitly define 
+site's general background from the html element*/
+html {
+	background-image: url(resources/images/tweed.png);
+	height: 200px;
+}
+body {
+	background-color: rgba(0, 0, 0, 0);
+	width: 100%;
+	height: 100%;
+}
+
+/************************** General Divs **************************/
+#header {
+	background-color: rgba(0, 0, 0, 0);
+	width: 100%;
+	height: 102px;
+	position: absolute;
+	top: 5px;	
+	z-index: 100;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#footer {
+	color: black;
+	width: 100%;
+	margin-top: 100px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	font-family: Tahoma;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#footer > div {	
+	width: 100%;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#rss {
+	margin-top: 5px;
+}
+
+#rss_icon {
+	background-image: url(resources/images/rss.png);
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;
+}
+
+#main {
+	background-color: rgba(0, 0, 0, 0);
+	width: 1024px;
+	
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 160px;  
+	margin-bottom: 50px;
+}	
+
+.main_div {
+	background-color: black;
+	width: 100%;
+	margin-left: auto; 
+	margin-right: auto;
+	margin-bottom: 30px;	
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	box-shadow: 6px 6px 10px black;
+}
+
+.header_message {
+	background-color: rgba(0, 0, 0, 0);
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	
+	font-family: Tahoma;
+}
+
+/************************** Navigation **************************/
+#left {
+	background-image: url(resources/images/tape_left.png);
+	width: 110px;
+	height: 102px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	flex-shrink: 0;
+}
+
+#navs_container {	 
+	background-image: url(resources/images/tape.png);	
+	width: 1024px;
+	height: 65px;
+	padding-right: 25px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 40px;
+	box-shadow: 5px 5px 8px black;		
+}
+
+#general_bar {
+	float: left;
+}
+
+#connect_bar,
+#user_bar {
+	float: right;
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0);
+	height: 100%;
+	padding-right: 5px;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;	
+}
+
+.navbar a {
+	text-decoration: none; 
+}
+
+.button {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.1);	
+	border-radius: 5px;	
+	height: 52px;
+	padding: 0px 10px;	
+	margin-right: 2px;
+	
+	color: black;
+	font-family: monospace;
+	font-size: 18px;	
+	font-style: small-caps;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	box-shadow: 1px 1px 5px black;
+}
+
+.button.active {
+	background-color: rgba(237, 45, 45, 0.6);
+}
+
+.button:hover {
+	background-color: rgba(255, 255, 255, 0.8);	
+	color: rgb(237, 156, 17);
+}
+
+.button.active:hover{
+	background-color: rgba(237, 45, 45, 0.8);
+}
+
+#drop {	
+	display: none;
+}
+
+/************************** Pop-up Box **************************/
+.tinted {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;	
+	z-index: 400;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.popup_box {
+	width: 512px;
+	background-color: white;
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+.x_but_div {
+	width: 100%;
+	height: 20px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.x_but{
+	padding-right: 5px;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.x_but:hover {
+	color: rgb(237, 156, 17);
+	cursor: pointer;
+	cursor: hand;
+}
+
+/************************** Media **************************/
+@media only screen and (max-width:1024px) {
+	#main,
+	#navs_container,
+	#main,
+	.main_div,
+	table {
+		width: 99%;
+	}
+		
+	#drop {	
+		position: absolute;
+		top: 43px;
+		left: 40px;
+		z-index: 200;		
+		display: flex;
+		flex-direction: column;
+	}
+
+	#drop_icon {		
+		border-radius: 5px;
+		border: 1px solid rgba(255, 255, 255, 0.1);	
+		width: 52px;
+		height: 52px;
+		padding: 0;
+		margin: 0;		
+	}
+	
+	#drop_image {
+		background-image: url(resources/images/dropdown.png);
+		width: 52px;
+		height: 52px;
+	}
+	
+	#drop_image:hover {
+		background-image: url(resources/images/dropdown2.png);
+	}
+	
+	#drop {	
+		display: none;
+	}
+	
+	#drop #general_bar {
+		background-color: grey;    /*to change*/
+		padding: 5px 2px 2px 4px;
+		margin-top: 5px;
+		
+		border-radius: 5px;
+		box-shadow: 6px 6px 10px black;
+	}
+	
+	#drop #general_bar a div{
+		margin-bottom: 1px;
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	#popup_box {
+		width: 95%;
+	}
+}

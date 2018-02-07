@@ -1,0 +1,77 @@
+﻿/************************** Forms **************************/
+.form_field {
+	position: relative;
+	margin: 10px 10px 10px 10px;
+}
+
+.form_field *,
+input[type = button] {
+	display: block;
+}
+
+input,
+submit,
+select {
+	height: 30px;
+	border-radius: 3px;
+}
+
+input[type = text],
+input[type = password],
+input[type = file] {
+	width: 60%;
+	padding-left: 2px;
+}
+
+textarea {
+	width: 60%;
+	padding: 10px 10px 10px 5px;
+	resize: none;
+}
+
+strong {
+	margin-bottom: 10px;
+}
+
+.error {
+	color: red;
+	margin-left: 1px;
+	margin-top: 5px;
+}
+
+.form_box  {
+	/*background-image: url(resources/images/brushed.png);*/
+	background-color: rgba(240, 240, 240, 1);
+	width: 512px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/************************** Specific form elements **************************/
+#new_report_box {
+	width: 99%;
+}
+
+#nComments {
+	width: 99%;
+}
+
+#add_file{
+	width: 160px;
+	color: blue;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+#add_file:hover{
+	text-decoration: underline;
+	margin-bottom: 10px;
+	cursor: pointer;
+	cursor: hand;
+}
+/************************** Media **************************/
+@media only screen and (max-width:1024px) {
+	textarea{
+		width: 100%;
+	}
+}

@@ -1,0 +1,25 @@
+﻿input[type = button] {
+	width: 170px;
+	margin: 10px 10px 10px 10px;
+}
+
+fieldset {
+	margin: 10px 10px 10px 10px;
+}
+
+fieldset,
+#submit_but {
+	display: none;
+}
+
+#change_message {
+	margin-top: 20px;
+	margin-left: 12px;
+	font-size: 18px;
+}
+
+#change_msg{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5px;
+}
