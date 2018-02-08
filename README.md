@@ -10,6 +10,7 @@ A list of my university projects, during my studies in Computer Engineering & In
 | [DataStructures][datas] | A B-Tree index data management system | C++ |
 | [DigImageProcessing][dip] | Implementation of various image processing techniques | Matlab |
 | [IconPuzzleGame][ipg] | A retro icon puzzle game | Java |
+| [SnakeGame][snake] | A retro snake game | Java |
 | [NetLab][netlab] | Implementation of a server/client system communication protocol | C, TCP/IP |
 | [OperatingSystems_1][os1] | A server/client system | C, Bash, multi-process communication, semaphores, shared memory |
 | [OperatingSystems_2][os2] | A server/client system using threads | C, Bash, Multi-threading |
@@ -22,6 +23,7 @@ A list of my university projects, during my studies in Computer Engineering & In
 [datas]: <https://github.com/DimitrisKlb/UniversityProjects/tree/master/DataStructures>
 [dip]: <https://github.com/DimitrisKlb/UniversityProjects/tree/master/DigImageProcessing>
 [ipg]: <https://github.com/DimitrisKlb/UniversityProjects/tree/master/IconPuzzleGame>
+[snake]: <https://github.com/DimitrisKlb/UniversityProjects/tree/master/SnakeGame>
 [netlab]: <https://github.com/DimitrisKlb/UniversityProjects/tree/master/NetLab>
 [os1]: <https://github.com/DimitrisKlb/UniversityProjects/tree/master/OperatingSystems_1>
 [os2]: <https://github.com/DimitrisKlb/UniversityProjects/tree/master/OperatingSystems_2>
